@@ -1,5 +1,7 @@
 import requests
 
-res = requests.get("https://www.google.com/")
+response = requests.get(
+    'https://github.com/JulianCamiloGallego/404-Lab1/blob/main/script.py?raw=true')
 
-print(res)
+if response.status_code == 200:
+    print(response.text)
